@@ -1,6 +1,6 @@
 class BirdsController < ApplicationController
   def index
     @birds = Bird.all
-    render plain: "Hello #{@birds[2].name}"
+    render json: "JSON is object notation converted to string data"
   end
 end
